@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;  
+   padding: 0 20px;
+}
+.rigth_nav {
+    background-color:#074B8A;
+    width: 100%;
+    padding: 20px 20px ;
+    .right_itms {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        button{
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 600;
+            gap: 10px;
+            transition: all 0.2s ease-in-out;
+             &:hover{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
+             }
+            svg{
+                font-size: 22px;
+            }
+        }
+    }
+  .micrafon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: none;
+  a{
+      text-decoration: none;
+      button{
+        background-color: transparent;
+        color: #000;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+          svg{
+            color: #fff;
+          }
+      }
+  }
+  }
+}
+
+
+@media (max-width: 768px) {
+    #nav_hidden1{
+        display: none;
+    }
+     .micrafon{
+        display: flex;
+        justify-content: end;
+      
+     }
+     .right_itms{
+        position: relative;
+        left: 15px;
+     }
+   
+}
